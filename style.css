@@ -1,0 +1,104 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing:  border-box;
+
+}
+h1 
+{
+	font: black;
+}
+.form-orientador
+{
+	width: 600px; 
+	background: white;
+	padding:50px;
+	margin:auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'calibri';
+
+	}
+body{
+	background-color: white;
+	
+}
+.form-orientador h4
+{
+font-size: 22px;
+margin-bottom: 20px;
+
+}
+.controls{
+	width: 100%;
+	background:white ;
+	padding: 10px;
+	border-radius: 18px;
+	margin-bottom: 16px;
+	border: 1px solid;
+	font-family: 'calibri';
+	font-size: 18px;
+
+}
+.form-orientador p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+
+}
+head
+{
+	background: blue;
+}
+.uno
+{
+	background-color: #04B404;
+		color:white;
+} 
+
+.form-orientador .boton
+{
+width: 100%;
+border:none;
+padding: 24px;
+color: white;
+margin: 16px 0;
+font-size: 16px; 
+}
+.table
+{
+	border:1px solid black;
+}
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+   
+   border-radius: 2px;
+
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+#navegador li a {
+   padding: 2px 7px 2px 7px;
+   color: #666;
+   background-color: #eeeeee;
+   border: 1px solid #ccc;
+   text-decoration: none;
+}
+#navegador li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
