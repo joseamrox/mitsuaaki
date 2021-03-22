@@ -25,7 +25,8 @@ $ubicacion = $_POST['ubicacion'];
     <td> <?php
   echo $nombredelcentro;  ?>   
   </td>
-    <td> <?php
+    <td> 
+  <?php
   echo $telefono;  ?></td>
   <td>
   <?php
