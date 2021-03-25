@@ -5,7 +5,13 @@
 	require_once('database.php');
 
 	// Instancia conexion a la bd
+<<<<<<< HEAD
 	$database = new Database('localhost', 'root', '', 'bd_compras');
+=======
+	$database = new Database('localhost', 'root', '', '', '3306');
+
+	$linkToDB = $database->connectToDB();
+>>>>>>> 94b6e7ed0140f18443bd142837f7b3be91f36d52
 	
 	try {
 		$linkToDB = $database->connectToDB();		
@@ -19,7 +25,11 @@
 			echo "Conexion correcta";
 		}
 
+<<<<<<< HEAD
 	} catch (Exception $e) {
 		echo "Error de conexion: " . $e->getMessage();
 	}
 ?>
+=======
+?>
+>>>>>>> 94b6e7ed0140f18443bd142837f7b3be91f36d52
