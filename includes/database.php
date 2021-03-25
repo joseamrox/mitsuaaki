@@ -6,46 +6,36 @@
 */
 class Database
 {
-	private $dbServer = '';
-	private $dbUser = '';
-	private $dbPassword = '';
-	private $db = '';
-	private $dbPort = '';
+	private $dbServer = 'NULL';
+	private $dbUser = 'NULL';
+	private $dbPassword = 'NULL';
+	private $db = 'NULL';
+
 
 	// Se inicializan variables de conexion.
-	function __construct($dbServer, $dbUser, $dbPassword, $db, $dbPort)
+	function __construct($dbServer, $dbUser, $dbPassword, $db)
 	{
 		$this->dbServer = $dbServer;
 		$this->dbUser = $dbUser;
 		$this->dbPassword = $dbPassword;
 		$this->db = $db;
-		$this->dbPort = $dbPort;
 	}
 
 	// Realizo conexion a la bd.
 	function connectToDB()
 	{
-		$linkToDB;
-
-		try {
+					
 			$connectDB = new mysqli(
-				$this->dbServer,
-				$this->dbUser,
-				$this->dbPassword,
-				$this->db);
-
+			$this->dbServer,
+			$this->dbUser,
+			$this->dbPassword,
+			$this->db);
+			
 			// Se definen codificacion a usar en la conexion a la bd
 			$connectDB->set_charset('UTF8');
-
-			$linkToDB = $connectDB;
-		} catch (mysqli_sql_exception $err) {
-			throw $err;
-		}
-
-
+	
+	
+			return $connectDB;
 	}
-
 }
-
-
 ?>
